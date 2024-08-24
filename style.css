@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #ff6f61, #de6262);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    color: #ff6f61;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* Remove gaps between images */
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.gallery-images img {
+    flex: 1 1 auto;
+    width:10px;
+    height: 300px;
+    border-radius:10%;
+    transition: flex-grow 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-images img:hover {
+    flex-grow: 1.5; /* Increase the flex-grow property on hover to expand the width */
+    transform: scale(1.05); /* Optional: Slightly scale the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Bring the hovered image to the front */
+}
+
+.message {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message h2 {
+    font-size: 2em;
+    color: #ff6f61;
+}
+
+.message-content {
+    padding: 15px;
+    background: #ffeef0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-content p {
+    margin: 15px 0;
+}
+
+.proposal-button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.proposal-button:hover {
+    background: #e55c50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position:static; 
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
